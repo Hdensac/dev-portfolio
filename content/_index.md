@@ -86,17 +86,15 @@ sections:
       categories:
         - name: Languages
           items:
-            - name: TypeScript
-              icon: devicon/typescript
+            - name: PHP
+              icon: devicon/PHP 
             - name: JavaScript
               icon: devicon/javascript
             - name: Python
               icon: devicon/python
-            - name: Go
-              icon: devicon/go
         - name: Frontend
           items:
-            - name: Vue
+            - name: Vue.js
               icon: devicon/vuejs
             - name: Next.js
               icon: devicon/nextjs
@@ -106,14 +104,12 @@ sections:
               icon: devicon/alpinejs
         - name: Backend
           items:
+            - name: Laravel
+              icon: devicon/laravel
+            - name: Django
+              icon: devicon/django
             - name: Node.js
               icon: devicon/nodejs
-            - name: Express
-              icon: devicon/express
-            - name: PostgreSQL
-              icon: devicon/postgresql
-            - name: Redis
-              icon: devicon/redis
         - name: DevOps
           items:
             - name: Docker
