@@ -96,8 +96,8 @@ sections:
               icon: devicon/go
         - name: Frontend
           items:
-            - name: React
-              icon: devicon/react
+            - name: Vue
+              icon: devicon/vue
             - name: Next.js
               icon: devicon/nextjs
             - name: Tailwind CSS
