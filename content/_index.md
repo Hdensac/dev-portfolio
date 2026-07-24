@@ -18,10 +18,10 @@ sections:
         enable: true
         prefix: "I build"
         strings:
-          - "full-stack web apps"
-          - "scalable APIs"
-          - "beautiful UIs"
-          - "open source tools"
+          - "full-stack & secure web apps"
+          - "Django & Laravel backends"
+          - "property management SaaS"
+          - "automated PDF engines"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -92,7 +92,7 @@ sections:
         - name: Web Frameworks
           items:
             - name: Django
-              icon: devicon/django-plain
+              icon: brands/django
             - name: Laravel
               icon: devicon/laravel
             - name: Vue.js
@@ -108,7 +108,7 @@ sections:
             - name: SQLite
               icon: devicon/sqlite
             - name: Cloudinary
-              icon: devicon/cloudinary
+              icon: brands/cloudinary
         - name: Systems, Cloud & Tools
           items:
             - name: Linux
@@ -116,7 +116,7 @@ sections:
             - name: Git & GitHub
               icon: brands/github
             - name: Render
-              icon: devicon/render
+              icon: brands/render
             - name: Vercel
               icon: devicon/vercel
     design:

@@ -18,10 +18,10 @@ sections:
         enable: true
         prefix: "I build"
         strings:
-          - "full-stack web apps"
-          - "scalable APIs"
-          - "beautiful UIs"
-          - "open source tools"
+          - "full-stack & secure web apps"
+          - "Django & Laravel backends"
+          - "property management SaaS"
+          - "automated PDF engines"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -102,7 +102,7 @@ sections:
             - name: Laravel
               icon: devicon/laravel
             - name: Django
-              icon: devicon/django-plain
+              icon: brands/django
             - name: Node.js
               icon: devicon/nodejs
         - name: DevOps
