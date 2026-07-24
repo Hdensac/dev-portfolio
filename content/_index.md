@@ -73,46 +73,50 @@ sections:
         padding: ["4rem", "0", "4rem", "0"]
    
   # Visual Tech Stack - Icons organized by category
-  - block: tech-stack
+- block: tech-stack
     id: skills
     content:
       title: "Tech Stack"
-      subtitle: "Technologies I use to build things"
+      subtitle: "Technologies & tools I use to build secure applications"
       categories:
         - name: Languages
           items:
+            - name: Python
+              icon: devicon/python
             - name: PHP
               icon: devicon/php
             - name: JavaScript
               icon: devicon/javascript
-            - name: Python
-              icon: devicon/python
-        - name: Frontend
+            - name: SQL
+              icon: devicon/postgresql
+        - name: Web Frameworks
           items:
-            - name: Vue.js
-              icon: devicon/vuejs
-            - name: Next.js
-              icon: devicon/nextjs
-            - name: Tailwind CSS
-              icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
-        - name: Backend
-          items:
-            - name: Laravel
-              icon: devicon/laravel
             - name: Django
               icon: devicon/django-plain
-            - name: Node.js
-              icon: devicon/nodejs
-        - name: DevOps
+            - name: Laravel
+              icon: devicon/laravel
+            - name: Vue.js
+              icon: devicon/vuejs
+            - name: Tailwind CSS
+              icon: devicon/tailwindcss
+        - name: Databases & Backend Services
           items:
-            - name: Docker
-              icon: devicon/docker
-            - name: AWS
-              icon: devicon/amazonwebservices
-            - name: GitHub Actions
+            - name: PostgreSQL
+              icon: devicon/postgresql
+            - name: Supabase
+              icon: devicon/supabase
+            - name: SQLite
+              icon: devicon/sqlite
+            - name: Cloudinary
+              icon: devicon/cloudinary
+        - name: Systems, Cloud & Tools
+          items:
+            - name: Linux
+              icon: devicon/linux
+            - name: Git & GitHub
               icon: brands/github
+            - name: Render
+              icon: devicon/render
             - name: Vercel
               icon: devicon/vercel
     design:
