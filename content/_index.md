@@ -73,7 +73,7 @@ sections:
         padding: ["4rem", "0", "4rem", "0"]
    
   # Visual Tech Stack - Icons organized by category
-- block: tech-stack
+  - block: tech-stack
     id: skills
     content:
       title: "Tech Stack"
