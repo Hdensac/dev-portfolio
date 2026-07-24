@@ -18,11 +18,8 @@ tech_stack:
   - Docker
 links:
   - type: github
-    url: https://github.com/alexjohnson/ecommerce-platform
+    url: https://github.com/yourusername/ecommerce-platform
     label: Code
-  - type: live
-    url: https://shop-demo.example.com
-    label: Demo
 featured: true
 status: "Live"
 role: "Lead Developer"
@@ -68,7 +65,7 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 - Microservices architecture allowing independent scaling
 - Horizontal scaling with load balancing
 - Database read replicas for improved query performance
-- Message queues for async processing (order emails, inventory updates)
+- Message queues for async processing
 
 ### Security
 - JWT authentication with refresh tokens
@@ -76,92 +73,29 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 - Input validation and sanitization
 - PCI-compliant payment processing via Stripe
 
-## Architecture
-
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  React SPA  │────▶│   REST API   │────▶│ PostgreSQL  │
-└─────────────┘     │  (Express)   │     └─────────────┘
-                    └──────┬───────┘
-                           │
-                    ┌──────▼───────┐
-                    │    Redis     │
-                    │   (Cache)    │
-                    └──────────────┘
-```
-
-## Challenges & Solutions
-
-### Challenge 1: Inventory Sync
-**Problem**: Multiple users buying same product simultaneously causing overselling
-
-**Solution**: Implemented optimistic locking with Redis to ensure inventory accuracy during concurrent purchases
-
-### Challenge 2: Payment Processing
-**Problem**: Handling payment failures gracefully while maintaining order integrity
-
-**Solution**: Built robust state machine for order processing with automatic retry logic and customer notifications
-
-### Challenge 3: Performance at Scale
-**Problem**: Slow page loads during traffic spikes
-
-**Solution**: Implemented multi-layer caching strategy (CDN, Redis, in-memory) and database query optimization
-
 ## Results
 
-- **Performance**: 60% faster page load times compared to previous platform
-- **Conversion**: 25% increase in conversion rate due to improved UX
+- **Performance**: 60% faster page load times
+- **Conversion**: 25% increase in conversion rate
 - **Uptime**: 99.9% uptime over 6 months in production
-- **Scale**: Successfully handled Black Friday with 10k concurrent users
+- **Scale**: Successfully handled 10k concurrent users
 - **Revenue**: Processing over $50k in monthly transactions
 
-## Tech Stack Details
+## Tech Stack
 
-**Frontend**
-- React 18 with TypeScript
-- Tailwind CSS for styling
-- React Query for data fetching
-- React Hook Form for forms
-
-**Backend**
-- Node.js with Express
-- PostgreSQL with Prisma ORM
-- Redis for caching and sessions
-- Bull for job queues
-
-**Infrastructure**
-- Docker containers
-- AWS EC2 for hosting
-- AWS S3 for image storage
-- Cloudflare CDN
-- GitHub Actions for CI/CD
-
-**Payment & Services**
-- Stripe for payments
-- SendGrid for emails
-- Sentry for error tracking
-
-## Future Improvements
-
-- [ ] Mobile app (React Native)
-- [ ] Multi-language support
-- [ ] Wishlist and product recommendations
-- [ ] Live chat support
-- [ ] Advanced analytics dashboard
-
-## Screenshots
-
-*(Screenshots would go here in production)*
+**Frontend**: React 18, TypeScript, Tailwind CSS, React Query  
+**Backend**: Node.js, Express, PostgreSQL, Redis  
+**Infrastructure**: Docker, AWS, Cloudflare CDN, GitHub Actions  
+**Payments**: Stripe, SendGrid
 
 ## Lessons Learned
 
-1. **Start with Performance**: Built with performance in mind from day one rather than optimizing later
+1. **Start with Performance**: Built with performance in mind from day one
 2. **Testing Matters**: Comprehensive test suite caught critical bugs before production
 3. **Monitor Everything**: Proper logging and monitoring essential for maintaining uptime
-4. **User Feedback**: Regular user testing revealed UX issues we wouldn't have found otherwise
+4. **User Feedback**: Regular user testing revealed UX issues
 
 ---
 
-**Project Status**: ✅ Live in Production  
-**GitHub**: [View Source Code](https://github.com/alexjohnson/ecommerce-platform)  
-**Demo**: [Try it Live](https://shop-demo.example.com)
+**Status**: ✅ Live in Production  
+**GitHub**: [View Source Code](https://github.com/yourusername/ecommerce-platform)
