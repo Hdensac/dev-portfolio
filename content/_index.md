@@ -97,7 +97,7 @@ sections:
         - name: Frontend
           items:
             - name: Vue
-              icon: devicon/vuejs-original
+              icon: devicon/vuejs
             - name: Next.js
               icon: devicon/nextjs
             - name: Tailwind CSS
