@@ -7,18 +7,19 @@ name:
   family: HOUNSINOU
 postnominals: []
 status:
-  icon: "🎓"  # 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
+  icon: "🎓"  # 🎓 Student & Cybersecurity Researcher
 
-role: Full-Stack Developer & Django Specialist
+role: Cybersecurity Master's Student & Full-Stack Developer
 email: hdensac@gmail.com
 
 bio: |
-  Full-stack developer with 2+ years of experience building secure, scalable web applications.
-  Passionate about Python/Django, modern cloud architectures, PostgreSQL/Supabase, and automated PDF engines.
+  Cybersecurity Master's student at IFRI (UAC) and Full-stack Developer.
+  Specialized in Python/Django, secure database architecture (PostgreSQL/Supabase RLS), and robust web applications.
+  Passionate about combining software engineering with defensive security practices.
 
 affiliations:
-  - name: Freelance / Independent
-    url: https://github.com/hdensac
+  - name: Institut de Formation et de Recherche en Informatique (IFRI - UAC)
+    url: https://ifri-uac.bj/
 
 links:
   - icon: at-symbol
@@ -36,7 +37,7 @@ links:
   - icon: brands/medium
     url: https://hdensac.medium.com/
     label: Medium
-  - icon : brands/instagram
+  - icon: brands/instagram
     url: https://www.instagram.com/hdensac/
     label: Instagram
   - icon: brands/discord
@@ -44,31 +45,46 @@ links:
     label: Discord
 
 interests:
+  - Cybersecurity & Web Application Defense
   - Django & Python Ecosystem
-  - Cloud Architecture & Serverless
-  - Database Security & RLS (Supabase)
-  - Automated PDF & Document Generation
-  - Web Performance & DX
+  - Database Security & Row Level Security (RLS)
+  - Cloud Infrastructure & Serverless
+  - Secure Software Development Life Cycle (SSDLC)
 
 education:
-  - degree: B.S. Computer Science
-    institution: Your University / Institution Name
-    start: 2021-09-01
-    end: 2024-06-30
+  - degree: Master's Degree in Cybersecurity & Information Security
+    institution: IFRI - Institut de Formation et de Recherche en Informatique (UAC)
+    start: 2024-10-01
     summary: |
-      Focus on software engineering, database management, and web application architecture.
+      Advanced training in network security, system hardening, application security, cryptography, and risk audit.
+  - degree: Bachelor's Degree in Computer Engineering / Software Engineering
+    institution: INSTI - Institut National Supérieur de Technologie Industrielle (Lokossa)
+    start: 2021-10-01
+    end: 2024-07-31
+    summary: |
+      Strong foundation in software engineering, system architecture, object-oriented programming, and databases.
 
 experience:
-  - role: Full-Stack Developer
+  - role: Full-Stack Developer & Security Lead
     org: Property Management Application (SaaS)
     start: 2023-01-01
     summary: |
       Architected and deployed a multi-tenant property management platform using Django and Supabase (PostgreSQL).
-      Implemented Row Level Security (RLS) policies for strict data isolation.
+      Enforced strict data isolation using PostgreSQL Row Level Security (RLS) policies.
       Built dynamic PDF generation engine using ReportLab and Cloudinary media storage.
-      Deployed continuous integration pipeline via Render and Vercel.
+      Configured CI/CD deployment pipelines on Render and Vercel with secure env management.
 
 skills:
+  - name: Cybersecurity & SecOps
+    items:
+      - label: Web Application Security (OWASP Top 10)
+        level: 4
+      - label: Row Level Security (RLS / Supabase)
+        level: 5
+      - label: IAM & Authentication
+        level: 4
+      - label: System & Code Hardening
+        level: 4
   - name: Backend & Databases
     items:
       - label: Python / Django
@@ -79,21 +95,15 @@ skills:
         level: 5
       - label: SQLite
         level: 4
-  - name: Frontend & Tools
+  - name: Frontend, Cloud & Tools
     items:
       - label: JavaScript / HTML / CSS
         level: 4
-      - label: ReportLab (PDF)
+      - label: ReportLab (PDF Engine)
         level: 5
       - label: Git / GitHub
         level: 5
-  - name: Deployment & Cloud
-    items:
-      - label: Cloudinary
-        level: 5
-      - label: Render / Vercel
-        level: 4
-      - label: Environment & Security (RLS)
+      - label: Cloudinary / Render / Vercel
         level: 4
 
 languages:
