@@ -33,6 +33,15 @@ links:
   - icon: brands/x
     url: https://x.com/hdensacoden
     label: X (Twitter)
+  - icon: brands/medium
+    url: https://hdensac.medium.com/
+    label: Medium
+  - icon : brands/instagram
+    url: https://www.instagram.com/hdensac/
+    label: Instagram
+  - icon: brands/discord
+    url: https://discord.gg/hdensac-invite
+    label: Discord
 
 interests:
   - Django & Python Ecosystem
