@@ -16,27 +16,14 @@ tech_stack:
   - Stripe
   - Redis
   - Docker
-links:
-  - type: github
-    url: https://github.com/yourusername/ecommerce-platform
-    label: Code
 featured: true
-status: "Live"
-role: "Lead Developer"
-duration: "4 months"
-team_size: 2
-highlights:
-  - "Handles 10k+ concurrent users"
-  - "99.9% uptime SLA"
-  - "Processing $50k+ monthly transactions"
-  - "60% faster page load vs competitors"
 ---
 
 A modern, scalable e-commerce platform built from scratch with performance and user experience as top priorities.
 
 ## Overview
 
-Built a complete e-commerce solution for a mid-sized retail company looking to expand online. The platform handles everything from product catalog management to payment processing and order fulfillment.
+Built a complete e-commerce solution for a mid-sized retail company. The platform handles everything from product catalog management to payment processing and order fulfillment.
 
 ## Key Features
 
@@ -80,22 +67,3 @@ Built a complete e-commerce solution for a mid-sized retail company looking to e
 - **Uptime**: 99.9% uptime over 6 months in production
 - **Scale**: Successfully handled 10k concurrent users
 - **Revenue**: Processing over $50k in monthly transactions
-
-## Tech Stack
-
-**Frontend**: React 18, TypeScript, Tailwind CSS, React Query  
-**Backend**: Node.js, Express, PostgreSQL, Redis  
-**Infrastructure**: Docker, AWS, Cloudflare CDN, GitHub Actions  
-**Payments**: Stripe, SendGrid
-
-## Lessons Learned
-
-1. **Start with Performance**: Built with performance in mind from day one
-2. **Testing Matters**: Comprehensive test suite caught critical bugs before production
-3. **Monitor Everything**: Proper logging and monitoring essential for maintaining uptime
-4. **User Feedback**: Regular user testing revealed UX issues
-
----
-
-**Status**: ✅ Live in Production  
-**GitHub**: [View Source Code](https://github.com/yourusername/ecommerce-platform)
