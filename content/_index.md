@@ -102,7 +102,7 @@ sections:
             - name: Laravel
               icon: devicon/laravel
             - name: Django
-              icon: devicon/django-plain
+              icon: devicon/django-plain-wordmark
             - name: Node.js
               icon: devicon/nodejs
         - name: DevOps
