@@ -1,5 +1,5 @@
 ---
-title: Isac HOUNSINOU
+title: Isac-portfolio
 role: Full-Stack Developer
 avatar:
   filename: me.png

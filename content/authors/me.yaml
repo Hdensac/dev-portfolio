@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: 'Isac-portfolio'
+title: 'Isac-portfolio''
 summary: ''
 date: 2026-01-05
 type: landing
@@ -182,7 +182,7 @@ sections:
     id: blog
     content:
       title: Recent Posts
-      subtitle: 'Thoughts on web development, tech, and more'
+      subtitle: 'Isac-portfolio'Thoughts on web development, tech, and more'
       text: ''
       filters:
         folders:
