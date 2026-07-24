@@ -3,98 +3,96 @@ slug: me
 is_owner: true
 name:
   display: Isac HOUNSINOU 
-  given: Alex
-  family: Johnson
+  given: Isac 
+  family: HOUNSINOU
 postnominals: []
 status:
-  icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
-role: Full-Stack Developer
-email: alex@example.com
+  icon: "🎓"  # 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
+
+role: Full-Stack Developer & Django Specialist
+email: hdensac@gmail.com
+
 bio: |
-  Full-stack developer with 2+ years of experience building scalable web applications.
-  Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
+  Full-stack developer with 2+ years of experience building secure, scalable web applications.
+  Passionate about Python/Django, modern cloud architectures, PostgreSQL/Supabase, and automated PDF engines.
 
 affiliations:
-  - name: Tech Corp
-    url: https://techcorp.example.com
+  - name: Freelance / Independent
+    url: https://github.com/hdensac
 
 links:
   - icon: at-symbol
-    url: mailto:alex@example.com
+    url: mailto:hdensac@gmail.com
     label: E-mail Me
   - icon: brands/github
-    url: https://github.com/alexjohnson
+    url: https://github.com/hdensac
+    label: GitHub
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnson/
+    url: https://www.linkedin.com/in/isac-d%C3%A9nis-hounsinou-305143318/
+    label: LinkedIn
   - icon: brands/x
-    url: https://x.com/alexjohnson
+    url: https://x.com/hdensacoden
+    label: X (Twitter)
 
 interests:
-  - Web Development
-  - Cloud Architecture
-  - Open Source
-  - Developer Experience
+  - Django & Python Ecosystem
+  - Cloud Architecture & Serverless
+  - Database Security & RLS (Supabase)
+  - Automated PDF & Document Generation
+  - Web Performance & DX
 
 education:
   - degree: B.S. Computer Science
-    institution: State University
-    start: 2015-09-01
-    end: 2019-05-31
+    institution: Your University / Institution Name
+    start: 2021-09-01
+    end: 2024-06-30
     summary: |
-      Focus on software engineering and distributed systems.
-      Senior project on distributed caching systems.
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
+      Focus on software engineering, database management, and web application architecture.
 
 experience:
-  - role: Senior Software Engineer
-    org: Tech Corp
+  - role: Full-Stack Developer
+    org: Property Management Application (SaaS)
     start: 2023-01-01
     summary: |
-      Lead development of microservices architecture serving 1M+ users.
-      Improved API response time by 40% through optimization.
-      Mentored team of 5 junior developers.
-  - role: Full-Stack Developer
-    org: Startup Inc
-    start: 2021-06-01
-    end: 2022-12-31
-    summary: |
-      Built and deployed 3 production applications from scratch.
-      Implemented CI/CD pipeline reducing deployment time by 60%.
-      Led migration from monolith to microservices architecture.
-  - role: Junior Developer
-    org: Web Agency
-    start: 2020-01-01
-    end: 2021-05-31
-    summary: |
-      Developed client websites using React and modern web technologies.
-      Participated in code reviews and agile ceremonies.
+      Architected and deployed a multi-tenant property management platform using Django and Supabase (PostgreSQL).
+      Implemented Row Level Security (RLS) policies for strict data isolation.
+      Built dynamic PDF generation engine using ReportLab and Cloudinary media storage.
+      Deployed continuous integration pipeline via Render and Vercel.
 
 skills:
-  - name: Development
+  - name: Backend & Databases
     items:
-      - label: TypeScript
+      - label: Python / Django
         level: 5
-      - label: React
-        level: 5
-      - label: Node.js
-        level: 5
-      - label: Python
+      - label: PostgreSQL / Supabase
         level: 4
-  - name: DevOps
+      - label: REST APIs
+        level: 5
+      - label: SQLite
+        level: 4
+  - name: Frontend & Tools
     items:
-      - label: Docker
+      - label: JavaScript / HTML / CSS
         level: 4
-      - label: AWS
-        level: 4
-      - label: CI/CD
+      - label: ReportLab (PDF)
         level: 5
+      - label: Git / GitHub
+        level: 5
+  - name: Deployment & Cloud
+    items:
+      - label: Cloudinary
+        level: 5
+      - label: Render / Vercel
+        level: 4
+      - label: Environment & Security (RLS)
+        level: 4
 
 languages:
-  - name: English
+  - name: French
     level: 5
-    label: Native
+    label: Native / Langue maternelle
+  - name: English
+    level: 4
+    label: Professional / Courant
 
 awards: []
