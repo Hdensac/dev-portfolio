@@ -14,7 +14,7 @@ email: hdensac@gmail.com
 
 bio: |
   Cybersecurity Master's student at IFRI (UAC) and Full-stack Developer.
-  Specialized in Python/Django, secure database architecture (PostgreSQL/Supabase RLS), and robust web applications.
+  Specialized in Python/PHP and robust web applications.
   Passionate about combining software engineering with defensive security practices.
 
 affiliations:
@@ -42,22 +42,23 @@ links:
     label: Discord
 
 interests:
-  - Cybersecurity & Web Application Defense
-  - Django & Python Ecosystem
-  - Database Security & Row Level Security (RLS)
-  - Cloud Infrastructure & Serverless
-  - Secure Software Development Life Cycle (SSDLC)
+  - Web & SaaS Development (Django, Vue.js, Laravel)
+  - Network Hacking & Ethical Hacking
+  - Database Management & Supabase
+  - Linux Systems & Self-Hosting
+  - Video Games & Game Modding
+  - Japanese Language & Culture (Anime, Manga, J-Pop) 
 
 education:
   - degree: Master's Degree in Cybersecurity & Information Security
     institution: IFRI - Institut de Formation et de Recherche en Informatique (UAC)
-    start: 2024-10-01
+    start: 2025-11-01
     summary: |
       Advanced training in network security, system hardening, application security, cryptography, and risk audit.
   - degree: Bachelor's Degree in Computer Engineering / Software Engineering
     institution: INSTI - Institut National Supérieur de Technologie Industrielle (Lokossa)
-    start: 2021-10-01
-    end: 2024-07-31
+    start: 2022-10-31
+    end: 2025-07-23
     summary: |
       Strong foundation in software engineering, system architecture, object-oriented programming, and databases.
 
@@ -72,35 +73,35 @@ experience:
       Configured CI/CD deployment pipelines on Render and Vercel with secure env management.
 
 skills:
-  - name: Cybersecurity & SecOps
-    items:
-      - label: Web Application Security (OWASP Top 10)
-        level: 4
-      - label: Row Level Security (RLS / Supabase)
-        level: 5
-      - label: IAM & Authentication
-        level: 4
-      - label: System & Code Hardening
-        level: 4
-  - name: Backend & Databases
+  - name: Development & Frameworks
     items:
       - label: Python / Django
-        level: 5
+        level: 4
+      - label: PHP / Laravel
+        level: 4
+      - label: JavaScript / Vue.js
+        level: 3
+      - label: HTML5 / CSS3 / Tailwind
+        level: 4
+
+  - name: Databases & Cloud
+    items:
       - label: PostgreSQL / Supabase
         level: 4
-      - label: REST APIs
-        level: 5
       - label: SQLite
         level: 4
-  - name: Frontend, Cloud & Tools
+      - label: Cloudinary & Deployment (Render / Vercel)
+        level: 3
+
+  - name: Security & Systems
     items:
-      - label: JavaScript / HTML / CSS
+      - label: Network Hacking & Penetration Testing
+        level: 3
+      - label: Database Security & RLS
         level: 4
-      - label: ReportLab (PDF Engine)
-        level: 5
-      - label: Git / GitHub
-        level: 5
-      - label: Cloudinary / Render / Vercel
+      - label: Linux Systems Administration
+        level: 4
+      - label: Git & Version Control
         level: 4
 
 languages:
@@ -108,7 +109,10 @@ languages:
     level: 5
     label: Native / Langue maternelle
   - name: English
-    level: 4
-    label: Professional / Courant
+    level: 3
+    label: Intermediate / Professional Reading
+  - name: Japanese
+    level: 1
+    label: Beginner / Active Learner 🇯🇵
 
 awards: []
