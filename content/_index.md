@@ -63,11 +63,6 @@ sections:
         - name: Backend
           tag: Backend
       default_button_index: 0
-      # Archive link auto-shown if more projects exist than 'count' above
-      # archive:
-      #   enable: false  # Set to false to explicitly hide
-      #   text: "Browse All"  # Customize text
-      #   link: "/work/"  # Custom URL
     design:
       columns: 3
       background:
@@ -76,7 +71,7 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
+   
   # Visual Tech Stack - Icons organized by category
   - block: tech-stack
     id: skills
@@ -87,7 +82,7 @@ sections:
         - name: Languages
           items:
             - name: PHP
-              icon: devicon/PHP 
+              icon: devicon/php
             - name: JavaScript
               icon: devicon/javascript
             - name: Python
@@ -214,7 +209,7 @@ sections:
       text: |-
         I'm always interested in hearing about new projects and opportunities.
         Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: hdensac@gmailcom.com
+      email: hdensac@gmail.com
       autolink: true
     design:
       columns: '1'
