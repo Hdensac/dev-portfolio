@@ -16,14 +16,8 @@ tech_stack:
   - ReportLab
   - WhiteNoise
   - Render
-external_link: /projects/gestion-locative/
-links:
-  - name: Read more
-    url: /projects/gestion-locative/
-    icon: arrow-right
-  - name: GitHub
-    url: https://github.com/Hdensac/Gestion_locative2
-    icon: brands/github
+project_url: /projects/gestion-locative/
+github_url: https://github.com/Hdensac/Gestion_locative2
 featured: true
 ---
 

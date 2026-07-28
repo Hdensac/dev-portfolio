@@ -1,0 +1,18 @@
+﻿{{/* Local override to avoid HugoBlox link normalization bugs and keep project cards simple. */}}
+{{ $page := . }}
+{{ $projectURL := $page.Params.project_url | default $page.Params.external_link | default "" }}
+{{ $githubURL := $page.Params.github_url | default "" }}
+{{ if or $projectURL $githubURL }}
+<div class="mt-5 flex flex-wrap items-center gap-3">
+  {{ with $projectURL }}
+  <a href="{{ . }}" class="inline-flex items-center rounded-md border border-primary-300 px-4 py-2 text-sm font-medium text-primary-700 transition hover:bg-primary-50 dark:border-primary-700 dark:text-primary-300 dark:hover:bg-primary-950">
+    Read more
+  </a>
+  {{ end }}
+  {{ with $githubURL }}
+  <a href="{{ . }}" class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-300 text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-900" aria-label="GitHub" title="GitHub">
+    <img src="/media/icons/brands/github.svg" alt="GitHub" class="h-5 w-5" />
+  </a>
+  {{ end }}
+</div>
+{{ end }}
