@@ -1,4 +1,4 @@
----
+﻿---
 title: "WeatherNow - Real-Time Weather App"
 date: 2024-06-10
 summary: "Beautiful weather application with real-time data, 7-day forecasts, and interactive maps"
@@ -7,6 +7,7 @@ tags:
   - React
   - API Integration
   - PWA
+status: Live
 tech_stack:
   - React
   - TypeScript
@@ -14,6 +15,13 @@ tech_stack:
   - Mapbox
   - Tailwind CSS
   - Vite
+links:
+  - type: github
+    url: "#"
+    label: Code
+  - type: demo
+    url: /projects/weather-app/
+    label: Demo
 featured: false
 ---
 

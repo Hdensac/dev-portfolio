@@ -1,12 +1,13 @@
----
+﻿---
 title: "E-Commerce Platform"
 date: 2024-11-15
 summary: "E-commerce API backend with Stripe payments, inventory management, and real-time webhooks"
-tags: 
+tags:
   - Backend
   - Node.js
   - API
   - E-Commerce
+status: Live
 tech_stack:
   - React
   - TypeScript
@@ -16,6 +17,13 @@ tech_stack:
   - Stripe
   - Redis
   - Docker
+links:
+  - type: github
+    url: "#"
+    label: Code
+  - type: demo
+    url: /projects/ecommerce-platform/
+    label: Demo
 featured: true
 ---
 

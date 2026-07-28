@@ -8,6 +8,7 @@ tags:
   - Gestion Immobiliere
   - PDF Generation
   - Multi-tenant
+status: Live
 tech_stack:
   - Django 6.0
   - Python
@@ -16,9 +17,13 @@ tech_stack:
   - ReportLab
   - WhiteNoise
   - Render
-project_url: /projects/gestion-locative/
-demo_url: ""
-github_url: https://github.com/Hdensac/Gestion_locative2
+links:
+  - type: github
+    url: https://github.com/Hdensac/Gestion_locative2
+    label: Code
+  - type: demo
+    url: /projects/gestion-locative/
+    label: Demo
 featured: true
 ---
 
