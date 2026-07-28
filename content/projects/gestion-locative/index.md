@@ -18,13 +18,11 @@ tech_stack:
   - Render
 external_link: /projects/gestion-locative/
 links:
-  - type: custom
+  - name: Read more
     url: /projects/gestion-locative/
-    label: Read more
     icon: arrow-right
-  - type: github
+  - name: GitHub
     url: https://github.com/Hdensac/Gestion_locative2
-    label: ""
     icon: brands/github
 featured: true
 ---
