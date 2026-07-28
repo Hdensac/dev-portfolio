@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Gestion Locative - Plateforme de Gestion de Biens Immobiliers"
 date: 2026-07-24
 summary: "Application web full-stack de gestion locative multi-propriétaires avec suivi des loyers, génération automatique de quittances PDF et tableau de bord analytique"
@@ -16,6 +16,16 @@ tech_stack:
   - ReportLab
   - WhiteNoise
   - Render
+external_link: /projects/gestion-locative/
+links:
+  - type: custom
+    url: /projects/gestion-locative/
+    label: Read more
+    icon: arrow-right
+  - type: github
+    url: https://github.com/Hdensac/Gestion_locative2
+    label: ""
+    icon: brands/github
 featured: true
 ---
 
