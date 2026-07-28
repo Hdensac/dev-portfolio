@@ -4,10 +4,8 @@
 {{ $githubURL := $page.Params.github_url | default "" }}
 {{ $summary := $page.Params.summary | default $page.Summary }}
 {{ $stack := $page.Params.tech_stack | default $page.Params.tags | default (slice) }}
-{{ $image := nil }}
-{{ with $page.Resources.GetMatch "featured.png" }}
-  {{ $image = . }}
-{{ else }}
+{{ $image := $page.Resources.GetMatch "featured.png" }}
+{{ if not $image }}
   {{ with $page.Params.image.filename }}
     {{ with $page.Resources.GetMatch . }}
       {{ $image = . }}
