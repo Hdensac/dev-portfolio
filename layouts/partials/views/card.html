@@ -1,6 +1,7 @@
 ﻿{{/* Local card override for portfolio and list views. */}}
 {{ $page := .page | default . }}
 {{ $projectURL := $page.Params.project_url | default $page.Params.external_link | default $page.RelPermalink }}
+{{ $demoURL := $page.Params.demo_url | default $page.Params.website | default "" }}
 {{ $githubURL := $page.Params.github_url | default "" }}
 {{ $summary := $page.Params.summary | default $page.Summary }}
 {{ $stack := $page.Params.tech_stack | default $page.Params.tags | default (slice) }}
@@ -12,45 +13,70 @@
     {{ end }}
   {{ end }}
 {{ end }}
+{{ $hasDemo := and $demoURL (ne $demoURL "") }}
+{{ $hasCode := and $githubURL (ne $githubURL "") }}
+{{ $actionDemoURL := cond $hasDemo $demoURL $projectURL }}
 
-<article class="hb-card h-full overflow-hidden">
-  {{ with $image }}
-  <a href="{{ $projectURL }}" class="block overflow-hidden">
-    <img src="{{ .RelPermalink }}" alt="{{ $page.Title }}" class="h-56 w-full object-cover" loading="lazy" decoding="async" />
-  </a>
-  {{ end }}
+<article class="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-gray-300 bg-[#f6f4f7] text-gray-900 shadow-none transition hover:-translate-y-0.5 hover:border-primary-300 dark:border-gray-700 dark:bg-[#17171b] dark:text-white">
+  <div class="relative">
+    {{ with $image }}
+    <a href="{{ $actionDemoURL }}" class="block overflow-hidden">
+      <img src="{{ .RelPermalink }}" alt="{{ $page.Title }}" class="h-64 w-full object-cover" loading="lazy" decoding="async" />
+    </a>
+    {{ end }}
 
-  <div class="flex flex-1 flex-col p-4">
-    <h3 class="hb-card-title text-lg leading-tight">
-      <a href="{{ $projectURL }}" class="no-underline hover:underline">{{ $page.Title }}</a>
+    <div class="pointer-events-none absolute right-4 top-4 rounded-full border border-emerald-400/40 bg-emerald-400/20 px-4 py-1 text-sm font-medium text-emerald-500 backdrop-blur-sm dark:border-emerald-400/30 dark:bg-emerald-400/15 dark:text-emerald-300">
+      {{ if $hasDemo }}Live{{ else }}Preview{{ end }}
+    </div>
+  </div>
+
+  <div class="flex flex-1 flex-col px-6 pb-6 pt-5">
+    <h3 class="text-[1.35rem] font-semibold leading-tight tracking-tight text-gray-900 dark:text-white">
+      <a href="{{ $actionDemoURL }}" class="no-underline transition group-hover:text-primary-600 dark:group-hover:text-primary-300">{{ $page.Title }}</a>
     </h3>
 
     {{ with $summary }}
-    <p class="hb-card-subtitle px-0 mb-0 mt-3">{{ . | plainify }}</p>
+    <p class="mt-4 text-[1.02rem] leading-7 text-gray-600 dark:text-gray-300">{{ . | plainify }}</p>
     {{ end }}
 
     {{ with $stack }}
-    <div class="mt-4 flex flex-wrap gap-2">
+    <div class="mt-5 flex flex-wrap gap-2">
       {{ range $i, $item := first 4 $stack }}
-      <span class="inline-flex items-center rounded-md border border-primary-200 bg-primary-50 px-2.5 py-1 text-xs font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-950 dark:text-primary-300">{{ $item }}</span>
+      <span class="inline-flex items-center rounded-lg border border-[#bfc9ff] bg-[#dfe5ff] px-3 py-1 text-[0.92rem] font-medium text-[#4a57ff] dark:border-[#2c4f9b] dark:bg-[#12294e] dark:text-[#9ec0ff]">{{ $item }}</span>
       {{ end }}
       {{ if gt (len $stack) 4 }}
-      <span class="inline-flex items-center rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">+{{ sub (len $stack) 4 }}</span>
+      <span class="inline-flex items-center rounded-lg border border-gray-200 bg-gray-100 px-3 py-1 text-[0.92rem] font-medium text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">+{{ sub (len $stack) 4 }}</span>
       {{ end }}
     </div>
     {{ end }}
 
-    {{ if or $projectURL $githubURL }}
-    <div class="mt-auto flex items-center gap-3 pt-4">
-      {{ with $projectURL }}
-      <a href="{{ . }}" class="inline-flex items-center rounded-md border border-primary-300 px-3 py-2 text-sm font-medium text-primary-700 transition hover:bg-primary-50 dark:border-primary-700 dark:text-primary-300 dark:hover:bg-primary-950">Read more</a>
-      {{ end }}
-      {{ with $githubURL }}
-      <a href="{{ . }}" class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-300 text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-900" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
-        <img src="/media/icons/brands/github.svg" alt="GitHub" class="h-5 w-5" />
-      </a>
-      {{ end }}
+    <div class="mt-auto pt-8">
+      <div class="mb-5 h-px w-full bg-gray-200 dark:bg-gray-700"></div>
+      <div class="flex items-center gap-5 text-[1rem] font-medium text-gray-600 dark:text-gray-300">
+        {{ if $hasCode }}
+        <a href="{{ $githubURL }}" class="inline-flex items-center gap-2 transition hover:text-gray-900 dark:hover:text-white" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current"><path d="M12 2C6.477 2 2 6.58 2 12.25c0 4.534 2.865 8.377 6.839 9.735.5.09.682-.224.682-.5 0-.247-.01-1.074-.016-1.946-2.782.626-3.369-1.212-3.369-1.212-.454-1.188-1.11-1.504-1.11-1.504-.908-.636.069-.623.069-.623 1.004.072 1.532 1.053 1.532 1.053.892 1.565 2.341 1.113 2.91.85.091-.66.349-1.112.635-1.368-2.22-.26-4.555-1.14-4.555-5.073 0-1.121.39-2.038 1.03-2.757-.103-.262-.446-1.314.098-2.737 0 0 .84-.275 2.75 1.053A9.294 9.294 0 0 1 12 6.84c.85.004 1.705.117 2.504.343 1.91-1.328 2.748-1.053 2.748-1.053.546 1.423.203 2.475.1 2.737.64.719 1.028 1.636 1.028 2.757 0 3.943-2.34 4.81-4.566 5.065.36.319.68.947.68 1.908 0 1.377-.012 2.488-.012 2.826 0 .28.18.596.688.495C19.14 20.624 22 16.783 22 12.25 22 6.58 17.523 2 12 2Z"/></svg>
+          Code
+        </a>
+        {{ else }}
+        <span class="inline-flex items-center gap-2 text-gray-400 dark:text-gray-500">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current"><path d="M12 2C6.477 2 2 6.58 2 12.25c0 4.534 2.865 8.377 6.839 9.735.5.09.682-.224.682-.5 0-.247-.01-1.074-.016-1.946-2.782.626-3.369-1.212-3.369-1.212-.454-1.188-1.11-1.504-1.11-1.504-.908-.636.069-.623.069-.623 1.004.072 1.532 1.053 1.532 1.053.892 1.565 2.341 1.113 2.91.85.091-.66.349-1.112.635-1.368-2.22-.26-4.555-1.14-4.555-5.073 0-1.121.39-2.038 1.03-2.757-.103-.262-.446-1.314.098-2.737 0 0 .84-.275 2.75 1.053A9.294 9.294 0 0 1 12 6.84c.85.004 1.705.117 2.504.343 1.91-1.328 2.748-1.053 2.748-1.053.546 1.423.203 2.475.1 2.737.64.719 1.028 1.636 1.028 2.757 0 3.943-2.34 4.81-4.566 5.065.36.319.68.947.68 1.908 0 1.377-.012 2.488-.012 2.826 0 .28.18.596.688.495C19.14 20.624 22 16.783 22 12.25 22 6.58 17.523 2 12 2Z"/></svg>
+          Code
+        </span>
+        {{ end }}
+
+        {{ if $hasDemo }}
+        <a href="{{ $demoURL }}" class="inline-flex items-center gap-2 transition hover:text-gray-900 dark:hover:text-white" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2c1.9 0 3.65.68 5 1.81L5.81 17A8 8 0 0 1 12 4Zm0 16a8 8 0 0 1-6.19-2.81L18.19 7A8 8 0 0 1 12 20Z"/></svg>
+          Demo
+        </a>
+        {{ else }}
+        <span class="inline-flex items-center gap-2 text-gray-400 dark:text-gray-500">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2c1.9 0 3.65.68 5 1.81L5.81 17A8 8 0 0 1 12 4Zm0 16a8 8 0 0 1-6.19-2.81L18.19 7A8 8 0 0 1 12 20Z"/></svg>
+          Demo
+        </span>
+        {{ end }}
+      </div>
     </div>
-    {{ end }}
   </div>
 </article>
