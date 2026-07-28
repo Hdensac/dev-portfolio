@@ -1,0 +1,58 @@
+﻿{{/* Local card override for portfolio and list views. */}}
+{{ $page := .page | default . }}
+{{ $projectURL := $page.Params.project_url | default $page.Params.external_link | default $page.RelPermalink }}
+{{ $githubURL := $page.Params.github_url | default "" }}
+{{ $summary := $page.Params.summary | default $page.Summary }}
+{{ $stack := $page.Params.tech_stack | default $page.Params.tags | default (slice) }}
+{{ $image := nil }}
+{{ with $page.Resources.GetMatch "featured.png" }}
+  {{ $image = . }}
+{{ else }}
+  {{ with $page.Params.image.filename }}
+    {{ with $page.Resources.GetMatch . }}
+      {{ $image = . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<article class="hb-card h-full overflow-hidden">
+  {{ with $image }}
+  <a href="{{ $projectURL }}" class="block overflow-hidden">
+    <img src="{{ .RelPermalink }}" alt="{{ $page.Title }}" class="h-56 w-full object-cover" loading="lazy" decoding="async" />
+  </a>
+  {{ end }}
+
+  <div class="flex flex-1 flex-col p-4">
+    <h3 class="hb-card-title text-lg leading-tight">
+      <a href="{{ $projectURL }}" class="no-underline hover:underline">{{ $page.Title }}</a>
+    </h3>
+
+    {{ with $summary }}
+    <p class="hb-card-subtitle px-0 mb-0 mt-3">{{ . | plainify }}</p>
+    {{ end }}
+
+    {{ with $stack }}
+    <div class="mt-4 flex flex-wrap gap-2">
+      {{ range $i, $item := first 4 $stack }}
+      <span class="inline-flex items-center rounded-md border border-primary-200 bg-primary-50 px-2.5 py-1 text-xs font-medium text-primary-700 dark:border-primary-800 dark:bg-primary-950 dark:text-primary-300">{{ $item }}</span>
+      {{ end }}
+      {{ if gt (len $stack) 4 }}
+      <span class="inline-flex items-center rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">+{{ sub (len $stack) 4 }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if or $projectURL $githubURL }}
+    <div class="mt-auto flex items-center gap-3 pt-4">
+      {{ with $projectURL }}
+      <a href="{{ . }}" class="inline-flex items-center rounded-md border border-primary-300 px-3 py-2 text-sm font-medium text-primary-700 transition hover:bg-primary-50 dark:border-primary-700 dark:text-primary-300 dark:hover:bg-primary-950">Read more</a>
+      {{ end }}
+      {{ with $githubURL }}
+      <a href="{{ . }}" class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-300 text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-900" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+        <img src="/media/icons/brands/github.svg" alt="GitHub" class="h-5 w-5" />
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</article>
