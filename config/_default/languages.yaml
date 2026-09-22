@@ -3,7 +3,7 @@
 
 fr:
   locale: fr-fr
-  languageName: Français
+  label: Français
   weight: 1
   menu:
     main:
@@ -25,7 +25,7 @@ fr:
 
 en:
   locale: en-us
-  languageName: English
+  label: English
   contentDir: content/en
   weight: 2
   params:
