@@ -98,13 +98,13 @@ sections:
         - name: Sécurité & Réseaux
           items:
             - name: GNS3 & Cooja
-              icon: devicon/linux
+              icon: brands/gns3
             - name: MikroTik
-              icon: devicon/linux
+              icon: brands/mikrotik
             - name: OWASP ZAP
-              icon: devicon/linux
+              icon: brands/owasp
             - name: CrowdStrike
-              icon: devicon/linux
+              icon: brands/crowdstrike
         - name: Systèmes & Outils
           items:
             - name: Linux
