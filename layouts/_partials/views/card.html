@@ -15,7 +15,7 @@
 {{ if eq $section "projects" }}
 {{ $links := $page.Params.links | default (slice) }}
 {{ $techStack := $page.Params.tech_stack | default $page.Params.tags | default (slice) }}
-{{ $status := $page.Params.status | default "Preview" }}
+{{ $status := $page.Params.status | default "Aperçu" }}
 
 <article class="group relative flex h-full flex-col overflow-hidden rounded-[24px] border border-gray-300 bg-[#f6f4f7] text-gray-900 shadow-none transition hover:-translate-y-0.5 hover:border-primary-300 dark:border-gray-700 dark:bg-[#17171b] dark:text-white">
   <div class="relative">
@@ -56,7 +56,7 @@
         <div class="flex flex-wrap items-center gap-5">
           {{ range $links }}
             {{ $type := .type | default "custom" }}
-            {{ $label := .label | default (cond (eq $type "github") "Code" (cond (or (eq $type "live") (eq $type "demo")) "Demo" "Link")) }}
+            {{ $label := .label | default (cond (eq $type "github") "Code" (cond (or (eq $type "live") (eq $type "demo")) "Démo" "Lien")) }}
             {{ $url := .url | default "" }}
             {{ $enabled := and $url (ne $url "") }}
             <a href="{{ if $enabled }}{{ $url }}{{ else }}#{{ end }}" class="inline-flex items-center gap-2 transition {{ if $enabled }}hover:text-gray-900 dark:hover:text-white{{ else }}text-gray-400 dark:text-gray-500{{ end }}" {{ if $enabled }}target="_blank" rel="noopener noreferrer"{{ end }}>
@@ -71,7 +71,7 @@
         </div>
 
         <a href="{{ $page.RelPermalink }}" class="inline-flex items-center gap-2 text-gray-500 transition hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-          <span>Read more</span>
+          <span>Lire la suite</span>
           <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-current"><path d="M13.172 5 11.76 6.414 16.347 11H4v2h12.347l-4.587 4.586L13.172 19 20 12.172 13.172 5Z"/></svg>
         </a>
       </div>
@@ -94,7 +94,7 @@
     {{ end }}
     <div class="mt-auto pt-5 text-sm font-medium text-primary-600 dark:text-primary-300">
       <a href="{{ $page.RelPermalink }}" class="inline-flex items-center gap-2 hover:underline">
-        Read more
+        Lire la suite
       </a>
     </div>
   </div>

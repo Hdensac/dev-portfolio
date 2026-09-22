@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Full-Stack Developer"
+    tagline: "Développeur Full-Stack"
     # Site meta description for search engines and social sharing
-    description: "Modern developer portfolio showcasing web development projects, technical blog posts, and open source contributions. Built with Hugo Blox."
+    description: "Portfolio d'Isac HOUNSINOU : projets web, cybersécurité, articles techniques et réalisations full-stack."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
@@ -114,7 +114,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "© {year} {name}. Ce contenu est publié sous licence {license}"
     license:
       type: cc                          # cc | custom
       allow_derivatives: false
@@ -239,9 +239,9 @@ hugoblox:
   # Regional formatting preferences
   # ────────────────────────────────────────────────────────────────────────────
   locale:
-    date_format: "Jan 2, 2006"          # Go time format
-    time_format: "3:04 PM"
-    address_format: en-us
+    date_format: "2 Jan 2006"           # Go time format
+    time_format: "15:04"
+    address_format: fr-fr
 
   # ────────────────────────────────────────────────────────────────────────────
   # SECURITY

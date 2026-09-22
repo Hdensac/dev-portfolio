@@ -1,35 +1,33 @@
 ---
-# Leave the homepage title empty to use the site title
 title: 'Isac-portfolio'
 summary: ''
 date: 2026-01-05
 type: landing
 
 sections:
-  # Developer Hero - Gradient background with name, role, social, and CTAs
   - block: dev-hero
     id: hero
     content:
       username: me
-      greeting: "Hi, I'm"
+      greeting: "Bonjour, je suis"
       show_status: true
       show_scroll_indicator: true
       typewriter:
         enable: true
-        prefix: "I build"
+        prefix: "Je conçois"
         strings:
-          - "secure web applications"
-          - "cybersecurity solutions"
-          - "Python & PHP backends"
-          - "network security tools"
+          - "des applications web sécurisées"
+          - "des solutions de cybersécurité"
+          - "des backends Python & PHP"
+          - "des outils de sécurité réseau"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
       cta_buttons:
-        - text: View My Work
+        - text: Voir mes projets
           url: "#projects"
           icon: arrow-down
-        - text: Get In Touch
+        - text: Me contacter
           url: "#contact"
           icon: envelope
     design:
@@ -42,19 +40,18 @@ sections:
           dark: "#0a0a0f"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
-  
-  # Filterable Portfolio - Alpine.js powered project filtering
+
   - block: portfolio
     id: projects
     content:
-      title: "Featured Projects"
-      subtitle: "A selection of my recent work"
+      title: "Projets sélectionnés"
+      subtitle: "Une sélection de réalisations récentes"
       count: 0
       filters:
         folders:
           - projects
       buttons:
-        - name: All
+        - name: Tous
           tag: '*'
         - name: Full-Stack
           tag: Full-Stack
@@ -71,13 +68,12 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-   
-  # Visual Tech Stack - Icons organized by category
+
   - block: tech-stack
     id: skills
     content:
-      title: "Tech Stack"
-      subtitle: "Technologies & outils que j'utilise pour sécuriser et développer"
+      title: "Compétences techniques"
+      subtitle: "Technologies et outils que j'utilise pour développer et sécuriser"
       categories:
         - name: Langages
           items:
@@ -128,15 +124,14 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Experience Timeline
+
   - block: resume-experience
     id: experience
     content:
-      title: Experience
+      title: Expérience
       date_format: Jan 2006
       items:
-        - title: Stagiaire DSI — Dématérialisation & SI
+        - title: Stagiaire DSI - Dématérialisation & SI
           company: Ministère de l'Économie et des Finances (MEF)
           company_url: ''
           company_logo: ''
@@ -147,7 +142,7 @@ sections:
             * Dématérialisation du système de gestion des stages via une application web
             * Analyse des besoins et sécurisation des accès
             * Durée : 3 mois
-        - title: Stagiaire DSI — Support Réseaux & Systèmes
+        - title: Stagiaire DSI - Support Réseaux & Systèmes
           company: Ministère de l'Économie et des Finances (MEF)
           company_url: ''
           company_logo: ''
@@ -177,13 +172,12 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Recent Blog Posts
+
   - block: collection
     id: blog
     content:
-      title: Recent Posts
-      subtitle: 'Thoughts on web development, tech, and more'
+      title: Articles récents
+      subtitle: "Notes sur le développement web, la cybersécurité et les outils modernes"
       text: ''
       filters:
         folders:
@@ -200,16 +194,15 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Contact Section
+
   - block: contact-info
     id: contact
     content:
-      title: Get In Touch
-      subtitle: "Let's build something amazing together"
+      title: Me contacter
+      subtitle: "Construisons quelque chose de solide ensemble"
       text: |-
-        I'm always interested in hearing about new projects and opportunities.
-        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
+        Je suis ouvert aux projets, stages académiques et collaborations autour du développement web et de la sécurité informatique.
+        N'hésitez pas à me contacter pour discuter d'une opportunité.
       email: hdensac@gmail.com
       autolink: true
     design:
@@ -220,23 +213,21 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # CTA Card
+
   - block: cta-card
     content:
       title: "À la recherche d'un stage"
       text: |-
         Je suis actuellement à la recherche d'un **stage académique de fin d'études**
         en sécurité informatique ou développement full-stack.
-        
+
         N'hésitez pas à me contacter pour discuter d'une collaboration.
       button:
-        text: 'Download Resume'
+        text: 'Télécharger le CV'
         url: uploads/resume.pdf
         new_tab: true
     design:
       card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
         css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
         text_color: dark
       background:

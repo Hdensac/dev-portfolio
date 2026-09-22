@@ -25,7 +25,7 @@ affiliations:
 links:
   - icon: at-symbol
     url: mailto:hdensac@gmail.com
-    label: E-mail Me
+    label: Me contacter par e-mail
   - icon: brands/github
     url: https://github.com/hdensac
     label: GitHub
@@ -44,8 +44,8 @@ interests:
   - Développement Web Full-Stack (Django, Laravel, Vue.js)
   - Sécurisation IoT & Réseaux
   - Routage & Simulation Réseau (GNS3, Cooja, MikroTik)
-  - Linux Systems & Self-Hosting
-  - Japanese Language & Culture (Anime, Manga) 🇯🇵
+  - Administration Linux & auto-hébergement
+  - Langue et culture japonaises (anime, manga) 🇯🇵
 
 education:
   - degree: Master 2 Sécurité Informatique (En cours)
@@ -126,16 +126,16 @@ skills:
         level: 3
       - label: OWASP ZAP
         level: 3
-      - label: Network Hacking & Penetration Testing
+      - label: Sécurité réseau & tests d'intrusion
         level: 3
-      - label: Database Security & RLS
+      - label: Sécurité des bases de données & RLS
         level: 4
 
   - name: Systèmes & Outils
     items:
-      - label: Linux Systems Administration
+      - label: Administration des systèmes Linux
         level: 4
-      - label: Git & Version Control
+      - label: Git & gestion de versions
         level: 4
 
 languages:
@@ -153,6 +153,6 @@ languages:
     label: Courant
   - name: Japonais
     level: 1
-    label: Débutant / Active Learner 🇯🇵
+    label: Débutant / apprentissage actif 🇯🇵
 
 awards: []

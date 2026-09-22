@@ -5,10 +5,10 @@ summary: "Application web full-stack de gestion locative multi-propriétaires av
 tags:
   - Full-Stack
   - Django
-  - Gestion Immobiliere
-  - PDF Generation
+  - Gestion Immobilière
+  - Génération PDF
   - Multi-tenant
-status: Live
+status: En ligne
 tech_stack:
   - Django 6.0
   - Python
@@ -23,19 +23,19 @@ links:
     label: Code
   - type: demo
     url: /projects/gestion-locative/
-    label: Demo
+    label: Démo
 featured: true
 ---
 
 Gestion Locative est une plateforme web complète conçue pour aider plusieurs propriétaires à gérer leurs maisons, chambres, locataires, loyers et quittances depuis une interface centralisée.
 
-## Apercu
+## Aperçu
 
 Le projet est né d'un besoin concret: remplacer les tableaux Excel et les carnets papier par un outil web structuré, accessible depuis n'importe quel navigateur, avec génération automatique de documents PDF professionnels.
 
 L'application est pensée pour un contexte francophone et local, avec interface en français, gestion multi-propriétaires stricte et déploiement cloud-ready.
 
-## Fonctionnalites
+## Fonctionnalités
 
 ### Gestion du parc immobilier
 - Création, modification et suppression des maisons avec adresse et description
@@ -79,7 +79,7 @@ Maison --> Chambre --> Locataire --> Paiement --> Quittance
 
 Le modèle `Locataire` expose une méthode `get_retards_details(reference_date)` qui calcule les mois impayés en parcourant l'historique des paiements.
 
-### Logique des impayes
+### Logique des impayés
 
 ```python
 def _get_mois_reference(today):
@@ -90,14 +90,14 @@ def _get_mois_reference(today):
 
 Cette règle évite de considérer un locataire en retard trop tôt dans le mois.
 
-### Generation PDF
+### Génération PDF
 
 - Quittances A5 rendues directement avec `ReportLab`
 - Rapports A4 avec tableaux structurés
 - Logo dynamique basé sur les initiales du propriétaire
 - Signature numérique intégrée automatiquement en bas de la quittance
 
-### Deploiement
+### Déploiement
 
 | Composant | Développement | Production |
 | --- | --- | --- |
@@ -106,7 +106,7 @@ Cette règle évite de considérer un locataire en retard trop tôt dans le mois
 | Fichiers statiques | Django dev server | WhiteNoise |
 | Secrets | `.env` local | Variables d'environnement |
 
-## Tests automatises
+## Tests automatisés
 
 La suite de tests couvre les cas critiques:
 
