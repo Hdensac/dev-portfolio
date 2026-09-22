@@ -1,12 +1,13 @@
 ﻿{{/* Local override for project single pages. */}}
 {{ $page := . }}
 {{ $links := $page.Params.links | default (slice) }}
+{{ $isEnglish := eq site.Language.Lang "en" }}
 
 {{ if $links }}
 <div class="mt-8 flex flex-wrap items-center gap-3">
   {{ range $links }}
     {{ $type := .type | default "custom" }}
-    {{ $label := .label | default (cond (eq $type "github") "Code" (cond (or (eq $type "live") (eq $type "demo")) "Démo" "Lien")) }}
+    {{ $label := .label | default (cond (eq $type "github") "Code" (cond (or (eq $type "live") (eq $type "demo")) (cond $isEnglish "Demo" "Démo") (cond $isEnglish "Link" "Lien"))) }}
     {{ $url := .url | default "" }}
     {{ $enabled := and $url (ne $url "") }}
     <a href="{{ if $enabled }}{{ $url }}{{ else }}#{{ end }}" class="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition {{ if eq $type "github" }}border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-900{{ else }}border-emerald-500/30 bg-emerald-500/10 text-emerald-600 hover:bg-emerald-500/15 dark:text-emerald-300{{ end }}" {{ if $enabled }}target="_blank" rel="noopener noreferrer"{{ end }}>

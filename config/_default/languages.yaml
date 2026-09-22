@@ -4,9 +4,46 @@
 fr:
   locale: fr-fr
   languageName: Français
+  weight: 1
+  menu:
+    main:
+      - name: Projets
+        url: /#projects
+        weight: 10
+      - name: Compétences
+        url: /#skills
+        weight: 20
+      - name: Expérience
+        url: /#experience
+        weight: 30
+      - name: Blog
+        url: /#blog
+        weight: 40
+      - name: Contact
+        url: /#contact
+        weight: 50
 
-# À activer plus tard pour ajouter un bouton FR/EN :
-# en:
-#   locale: en-us
-#   languageName: English
-#   contentDir: content/en
+en:
+  locale: en-us
+  languageName: English
+  contentDir: content/en
+  weight: 2
+  params:
+    description: "Isac HOUNSINOU's portfolio: web projects, cybersecurity, technical articles, and full-stack work."
+  menu:
+    main:
+      - name: Projects
+        url: /en/#projects
+        weight: 10
+      - name: Skills
+        url: /en/#skills
+        weight: 20
+      - name: Experience
+        url: /en/#experience
+        weight: 30
+      - name: Blog
+        url: /en/#blog
+        weight: 40
+      - name: Contact
+        url: /en/#contact
+        weight: 50
