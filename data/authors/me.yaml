@@ -9,13 +9,14 @@ postnominals: []
 status:
   icon: "🎓"  # 🎓 Student & Cybersecurity Researcher
 
-role: Cybersecurity Master's Student & Full-Stack Developer
+role: Étudiant en Master 2 Sécurité Informatique & Développeur Full-Stack
 email: hdensac@gmail.com
 
 bio: |
-  Cybersecurity Master's student at IFRI (UAC) and Full-stack Developer.
-  Specialized in Python/PHP and robust web applications.
-  Passionate about combining software engineering with defensive security practices.
+  Étudiant en Master 2 Sécurité Informatique à l'IFRI (UAC) et Développeur Full-Stack.
+  Spécialisé en Python, PHP/Laravel et sécurité applicative.
+  Passionné par l'alliance entre ingénierie logicielle et cybersécurité défensive.
+  Actuellement à la recherche d'un stage académique de fin d'études.
 
 affiliations:
   - name: Institut de Formation et de Recherche en Informatique (IFRI - UAC)
@@ -37,43 +38,65 @@ links:
   - icon: brands/instagram
     url: https://www.instagram.com/hdensac/
     label: Instagram
-  - icon: brands/discord
-    url: https://discord.gg/hdensac-invite
-    label: Discord
 
 interests:
-  - Web & SaaS Development (Django, Vue.js, Laravel)
-  - Network Hacking & Ethical Hacking
-  - Database Management & Supabase
+  - Cybersécurité Défensive & Audit de Sécurité
+  - Développement Web Full-Stack (Django, Laravel, Vue.js)
+  - Sécurisation IoT & Réseaux
+  - Routage & Simulation Réseau (GNS3, Cooja, MikroTik)
   - Linux Systems & Self-Hosting
-  - Video Games & Game Modding
-  - Japanese Language & Culture (Anime, Manga, J-Pop) 
+  - Japanese Language & Culture (Anime, Manga) 🇯🇵
 
 education:
-  - degree: Master's Degree in Cybersecurity & Information Security
-    institution: IFRI - Institut de Formation et de Recherche en Informatique (UAC)
-    start: 2025-11-01
+  - degree: Master 2 Sécurité Informatique (En cours)
+    institution: IFRI - Institut de Formation et de Recherche en Informatique (UAC), Bénin
+    start: 2026-10-01
     summary: |
-      Advanced training in network security, system hardening, application security, cryptography, and risk audit.
-  - degree: Bachelor's Degree in Computer Engineering / Software Engineering
-    institution: INSTI - Institut National Supérieur de Technologie Industrielle (Lokossa)
-    start: 2022-10-31
-    end: 2025-07-23
+      Formation avancée en sécurité des réseaux, durcissement système, sécurité applicative, cryptographie et audit de risque.
+  - degree: Master 1 Sécurité Informatique
+    institution: IFRI - Institut de Formation et de Recherche en Informatique (UAC), Bénin
+    start: 2026-10-01
+    end: 2027-07-01
     summary: |
-      Strong foundation in software engineering, system architecture, object-oriented programming, and databases.
+      Projets de recherche : FinanceXpose (audit ransomware), Audit Web OWASP, Sécurisation IoT.
+  - degree: Licence Professionnelle - Génie Électrique & Informatique Option Info & Télécoms
+    institution: INSTI - Institut National Supérieur de Technologie Industrielle, Lokossa, Bénin
+    start: 2022-10-01
+    end: 2025-07-01
+    summary: |
+      Solide formation en ingénierie logicielle, architecture système, programmation orientée objet et bases de données.
+  - degree: Baccalauréat Série D — Mention Assez Bien
+    institution: CS Le Partage, Bénin
+    start: 2021-10-01
+    end: 2022-07-01
+    summary: |
+      Baccalauréat scientifique série D obtenu avec mention Assez Bien.
 
 experience:
-  - role: Full-Stack Developer & Security Lead
-    org: Property Management Application (SaaS)
-    start: 2023-01-01
+  - role: Stagiaire DSI — Dématérialisation & SI
+    org: Ministère de l'Économie et des Finances (MEF)
+    start: 2025-03-01
+    end: 2025-06-30
     summary: |
-      Architected and deployed a multi-tenant property management platform using Django and Supabase (PostgreSQL).
-      Enforced strict data isolation using PostgreSQL Row Level Security (RLS) policies.
-      Built dynamic PDF generation engine using ReportLab and Cloudinary media storage.
-      Configured CI/CD deployment pipelines on Render and Vercel with secure env management.
+      Dématérialisation du système de gestion des stages via une application web.
+      Analyse des besoins et sécurisation des accès.
+  - role: Stagiaire DSI — Support Réseaux & Systèmes
+    org: Ministère de l'Économie et des Finances (MEF)
+    start: 2024-08-01
+    end: 2024-09-30
+    summary: |
+      Maintenance du réseau filaire (sertissage, câblage, tests).
+      Configuration et sécurisation des postes Windows.
+  - role: Stagiaire DSI
+    org: Ministère de l'Économie et des Finances (MEF)
+    start: 2023-09-01
+    end: 2023-09-30
+    summary: |
+      Apprentissage des bases de l'algorithmique.
+      Découverte des structures du MEF et du datacenter.
 
 skills:
-  - name: Development & Frameworks
+  - name: Développement & Frameworks
     items:
       - label: Python / Django
         level: 4
@@ -84,35 +107,52 @@ skills:
       - label: HTML5 / CSS3 / Tailwind
         level: 4
 
-  - name: Databases & Cloud
+  - name: Bases de données & Cloud
     items:
       - label: PostgreSQL / Supabase
         level: 4
       - label: SQLite
         level: 4
-      - label: Cloudinary & Deployment (Render / Vercel)
+      - label: Cloudinary & Déploiement (Render / Vercel)
         level: 3
 
-  - name: Security & Systems
+  - name: Sécurité & Réseaux
     items:
+      - label: Simulation GNS3 & Cooja
+        level: 3
+      - label: Routage MikroTik
+        level: 3
+      - label: Audit de sécurité & Vulnérabilités
+        level: 3
+      - label: OWASP ZAP
+        level: 3
       - label: Network Hacking & Penetration Testing
         level: 3
       - label: Database Security & RLS
         level: 4
+
+  - name: Systèmes & Outils
+    items:
       - label: Linux Systems Administration
         level: 4
       - label: Git & Version Control
         level: 4
 
 languages:
-  - name: French
+  - name: Français
     level: 5
-    label: Native / Langue maternelle
-  - name: English
+    label: Courant (Langue d'enseignement)
+  - name: Anglais
     level: 3
-    label: Intermediate / Professional Reading
-  - name: Japanese
+    label: Niveau B1 — Certifié TBC Cabinet International (Nov. 2025)
+  - name: Minna
+    level: 5
+    label: Langue maternelle
+  - name: Fon
+    level: 4
+    label: Courant
+  - name: Japonais
     level: 1
-    label: Beginner / Active Learner 🇯🇵
+    label: Débutant / Active Learner 🇯🇵
 
 awards: []

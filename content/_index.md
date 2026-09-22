@@ -18,10 +18,10 @@ sections:
         enable: true
         prefix: "I build"
         strings:
-          - "full-stack & secure web apps"
-          - "Django & Laravel backends"
-          - "property management SaaS"
-          - "automated PDF engines"
+          - "secure web applications"
+          - "cybersecurity solutions"
+          - "Python & PHP backends"
+          - "network security tools"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -58,10 +58,10 @@ sections:
           tag: '*'
         - name: Full-Stack
           tag: Full-Stack
-        - name: Frontend
-          tag: Frontend
-        - name: Backend
-          tag: Backend
+        - name: Cybersécurité
+          tag: Cybersécurité
+        - name: Recherche
+          tag: Recherche
       default_button_index: 0
     design:
       columns: 3
@@ -77,9 +77,9 @@ sections:
     id: skills
     content:
       title: "Tech Stack"
-      subtitle: "Technologies & tools I use to build secure applications"
+      subtitle: "Technologies & outils que j'utilise pour sécuriser et développer"
       categories:
-        - name: Languages
+        - name: Langages
           items:
             - name: Python
               icon: devicon/python
@@ -89,7 +89,7 @@ sections:
               icon: devicon/javascript
             - name: SQL
               icon: devicon/postgresql
-        - name: Web Frameworks
+        - name: Frameworks Web
           items:
             - name: Django
               icon: brands/django
@@ -99,17 +99,17 @@ sections:
               icon: devicon/vuejs
             - name: Tailwind CSS
               icon: devicon/tailwindcss
-        - name: Databases & Backend Services
+        - name: Sécurité & Réseaux
           items:
-            - name: PostgreSQL
-              icon: devicon/postgresql
-            - name: Supabase
-              icon: devicon/supabase
-            - name: SQLite
-              icon: devicon/sqlite
-            - name: Cloudinary
-              icon: brands/cloudinary
-        - name: Systems, Cloud & Tools
+            - name: GNS3 & Cooja
+              icon: devicon/linux
+            - name: MikroTik
+              icon: devicon/linux
+            - name: OWASP ZAP
+              icon: devicon/linux
+            - name: CrowdStrike
+              icon: devicon/linux
+        - name: Systèmes & Outils
           items:
             - name: Linux
               icon: devicon/linux
@@ -136,42 +136,39 @@ sections:
       title: Experience
       date_format: Jan 2006
       items:
-        - title: Senior Software Engineer
-          company: Tech Corp
+        - title: Stagiaire DSI — Dématérialisation & SI
+          company: Ministère de l'Économie et des Finances (MEF)
           company_url: ''
           company_logo: ''
-          location: San Francisco, CA
-          date_start: '2023-01-01'
-          date_end: ''
+          location: Bénin
+          date_start: '2025-03-01'
+          date_end: '2025-06-30'
           description: |2-
-            * Lead development of microservices architecture serving 1M+ users
-            * Improved API response time by 40% through optimization
-            * Mentored team of 5 junior developers
-            * Tech stack: React, Node.js, PostgreSQL, AWS
-        - title: Full-Stack Developer
-          company: Startup Inc
+            * Dématérialisation du système de gestion des stages via une application web
+            * Analyse des besoins et sécurisation des accès
+            * Durée : 3 mois
+        - title: Stagiaire DSI — Support Réseaux & Systèmes
+          company: Ministère de l'Économie et des Finances (MEF)
           company_url: ''
           company_logo: ''
-          location: Remote
-          date_start: '2021-06-01'
-          date_end: '2022-12-31'
+          location: Bénin
+          date_start: '2024-08-01'
+          date_end: '2024-09-30'
           description: |2-
-            * Built and deployed 3 production applications from scratch
-            * Implemented CI/CD pipeline reducing deployment time by 60%
-            * Collaborated with design team on UI/UX improvements
-            * Tech stack: Next.js, Express, MongoDB, Docker
-        - title: Junior Developer
-          company: Web Agency
+            * Maintenance du réseau filaire (sertissage, câblage, tests)
+            * Configuration et sécurisation des postes Windows
+            * Durée : 2 mois
+        - title: Stagiaire DSI
+          company: Ministère de l'Économie et des Finances (MEF)
           company_url: ''
           company_logo: ''
-          location: New York, NY
-          date_start: '2020-01-01'
-          date_end: '2021-05-31'
+          location: Bénin
+          date_start: '2023-09-01'
+          date_end: '2023-09-30'
           description: |2-
-            * Developed client websites using modern web technologies
-            * Maintained and updated legacy codebases
-            * Participated in code reviews and agile ceremonies
-            * Tech stack: React, WordPress, PHP, MySQL
+            * Apprentissage des bases de l'algorithmique
+            * Découverte des structures du MEF et du datacenter
+            * Durée : 1 mois
     design:
       columns: '1'
       background:
@@ -227,11 +224,12 @@ sections:
   # CTA Card
   - block: cta-card
     content:
-      title: "Open to Opportunities"
+      title: "À la recherche d'un stage"
       text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
+        Je suis actuellement à la recherche d'un **stage académique de fin d'études**
+        en sécurité informatique ou développement full-stack.
         
-        Let's connect and discuss how I can help your team.
+        N'hésitez pas à me contacter pour discuter d'une collaboration.
       button:
         text: 'Download Resume'
         url: uploads/resume.pdf
